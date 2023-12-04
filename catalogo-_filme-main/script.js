@@ -10,6 +10,34 @@ document.addEventListener("DOMContentLoaded", function() {
     const addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
 
     let cart = [];
+    
+    //relogio
+    function updateClock() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+
+  const clock = document.getElementById('clock');
+  clock.textContent = `${hours}:${minutes}:${seconds}`;
+
+  setTimeout(updateClock, 1000);
+}
+
+updateClock();
+    
+    //carrossel 
+    const carousel = document.querySelector('.carousel');
+const images = carousel.querySelectorAll('img');
+let currentImageIndex = 0;
+
+function showNextImage() {
+    images[currentImageIndex].style.display = 'none';
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = 'block';
+}
+
+setInterval(showNextImage, 3000);
 
     // Encontre o elemento "cart-display" aqui
     const cartDisplay = document.getElementById("cart-display");
