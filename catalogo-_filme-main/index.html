@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Catálogo de Filmes</h1>
+    </header>
+       <div id="clock"></div>
+        <img class="relogio" src="20231203_213548_0000.png" alt="Relógio">
+    <section class="movie-list">
+        <ul>
+            <li>
+                <div class="carousel">
+  <img src="Napoleao-medio.jpg" alt="Napoleao-medio.jpg">
+  <img src="nap.jpg" alt="nap.jpg">
+  <img src="Coronation of Napoleon Joaquin Phoenix.jpeg" alt="Coronation of Napoleon Joaquin Phoenix.jpeg">
+  <img src="Vanessa Kirby as Joséphine, 2023 _ Coronation.jpeg" alt="Vanessa Kirby as Joséphine, 2023 _ Coronation.jpeg">
+    </div>
+    <div class="navigation-auto">
+  <div class="auto-btn1"></div>
+  <div class="auto-btn2"></div>
+  <div class="auto-btn3"></div>
+  <div class="auto-btn4"></div>
+                </div>
+
+                <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+                </div>
+                
+                <h2>Napoleão</h2>
+                <p class="sinopse hidden">Napoleão é um épico de ação que detalha a ascensão e queda do icônico Imperador francês Napoleão Bonaparte, interpretado pelo ganhador do Oscar, Joaquin Phoenix. Com a direção arrebatadora do lendário Ridley Scott, o filme captura a incansável jornada de Bonaparte pelo poder, a partir de sua relação viciante e volátil com seu verdadeiro amor, Josefina, mostrando suas táticas militares e políticas visionárias em algumas das mais dinâmicas sequências de batalhas já filmadas.</p>
+                <p class="elenco hidden">Elenco: Joaquin Phoenix, Outros atores</p>
+                <p class="diretor hidden">Diretor: Ridley Scott</p>
+                <button class="btn-details">Detalhes</button>   
+                <button class="btn-add-to-cart">Adicionar ao Carrinho</button>
+            </li>   
+            <li>
+                <div class="carousel">
+  <img src="01.jpg" alt="01.jpg">
+  <img src="02.jpg" alt="02.jpg">
+  <img src="03.jpg" alt="03.jpg">
+  <img src="04.jpg" alt="04.jpg">
+    </div>
+    <div class="navigation-auto">
+  <div class="auto-btn1"></div>
+  <div class="auto-btn2"></div>
+  <div class="auto-btn3"></div>
+                </div>
+
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+    </div>
+                <h2>Oppenheimer</h2>
+                <p class="sinopse hidden">Oppenheimer é um filme histórico de drama dirigido por Christopher Nolan e baseado no livro biográfico vencedor do Prêmio Pulitzer, Prometeu Americano: O Triunfo e a Tragédia de J. Robert Oppenheimer. Ambientado na Segunda Guerra Mundial, o longa acompanha a vida de J. Robert Oppenheimer (Cillian Murphy), físico teórico da Universidade da Califórnia e diretor do Laboratório de Los Alamos durante o Projeto Manhattan - que tinha a missão de projetar e construir as primeiras bombas atômicas.</p>
+                <p class="elenco hidden">Elenco: Cillian Murphy, Outros atores</p>
+                <p class="diretor hidden">Diretor: Christopher Nolan</p>
+                <button class="btn-details">Detalhes</button>
+                <button class="btn-add-to-cart">Adicionar ao Carrinho</button>
+            </li>
+            <li>
+                <div class="carousel">
+  <img src="IMG-20231102-WA0024.jpg" alt="IMG-20231102-WA0024.jpg">
+  <img src="70ca231a-4541-4b8f-af04-19bbbe546ee2.jpeg" alt="70ca231a-4541-4b8f-af04-19bbbe546ee2.jpeg">
+  <img src="What's Your Favorite; The Martian, Interstellar Or Gravity_.jpeg" alt="What's Your Favorite; The Martian, Interstellar Or Gravity_.jpeg">
+  <img src="Interstellar.jpeg" alt="Interstellar.jpeg">
+  
+    </div>
+    <div class="navigation-auto">
+  <div class="auto-btn1"></div>
+  <div class="auto-btn2"></div>
+  <div class="auto-btn3"></div>
+  <div class="auto-btn4"></div>
+                </div>
+
+                <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+                </div>
+                
+                <h2>Interestelar</h2>
+                <p class="sinopse hidden">Um grupo de cientistas e exploradores, liderados por Cooper, embarca em uma viagem espacial para encontrar um lugar com as condições necessárias para substituir a Terra e ali iniciar uma nova vida. A Terra está chegando ao fim e este grupo precisa encontrar um planeta além da nossa galáxia que garanta o futuro da raça humana.</p>
+                <p class="elenco hidden">Elenco: Matthew McConaughey, Anne Hathaway, Outros atores</p>
+                <p class="diretor hidden">Diretor: Christopher Nolan</p>
+                <button class="btn-details">Detalhes</button>
+                <button class="btn-add-to-cart">Adicionar ao Carrinho</button>
+            </li>
+            <!-- Adicione mais filmes aqui -->
+        </ul>
+    </section>
+
+    <!-- Modal de Detalhes -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-synopsis" class="hidden"></p>
+            <p id="modal-elenco" class="hidden"></p>
+            <p id="modal-diretor" class="hidden"></p>
+        </div>
+    </div>
+
+    <p id="cart-display">Carrinho: 0 filmes</p>
+
+    <!-- Formulário de Pedido -->
+    <form id="order-form" class="order-form">
+        <h2>Faça Seu Pedido</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" required>
+        <br>
+        <label for="payment">Informações de Pagamento:</label>
+        <input type="text" id="payment" name="payment" required>
+        <button id="submit-order" class="btn-submit-order">Enviar Pedido</button>
+    </form>
+    
+    <button id="cart-button" class="btn-cart">Carrinho</button>
+
+    </div>
+
+
+    <footer class="rodape">
+        <p class="direitos">Catálogo de Melhores Filmes</p>
+        <p class="direitos">Todos os direitos reservados Estefani Paola©</p>
+        <a id="contato" href="contato.html" target="_blank"><u>
+            Entre em contato</u></a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

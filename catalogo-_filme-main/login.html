@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <script src="login.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+  <h1>Tela de Login</h1>
+  <form class="container">
+    <fieldset>
+      <legend><strong>Login</strong></legend>
+      <br>
+         <section>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+         </section>
+              <br><br>
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" required><br><br>
+           
+     </fieldset>
+
+    <button type="button" onclick="validarLogin()">Entrar</button>
+  </form>
+
+  <p id="mensagem"></p> <!-- Elemento para exibir a mensagem de login -->
+  
+  <footer class="rodape">
+        <p class="direitos">Todos os direitos reservados Estefani Paola©</p>
+        <a id="contato" href="contato.html" target="_blank">Entre em contato</a>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

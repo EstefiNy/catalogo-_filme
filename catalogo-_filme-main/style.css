@@ -1,0 +1,237 @@
+/* Estilos gerais */
+body {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4040fb;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+h1 {
+    background-color: rgb(17, 54, 71);
+    color: beige;
+    padding: 20px;
+}
+
+#clock {
+  text-align:center;
+  font-size: 50px;
+  color: red;
+}
+img.relogio {
+  width: 100%;
+  height: 200px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel img:not(:first-child) {
+  display: none;
+}
+
+.navigation-auto,
+.manual-navigation {
+  margin-top: 10px;
+}
+
+.auto-btn1,
+.auto-btn2,
+.auto-btn3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  display: inline-block;
+}
+
+.manual-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.movie-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Cor dos títulos */
+h2 {
+    color: black;
+}
+
+/* Borda nas imagens */
+img {
+    border: 2px solid turquoise;
+    width: 200px;
+    height: 300px;
+}
+
+img:hover {
+    border: 2px solid turquoise;
+    width: 300px;
+    height: 400px;
+}
+
+p.sinopse {
+    display: none;
+}
+
+p.elenco {
+    display: none;
+}
+
+p.diretor   {
+    display: none;
+}
+
+p {
+    margin-top: 5px;
+    text-align: justify;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4040fb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Modal de Detalhes */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #f2f2f2;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Carrinho de Compras */
+.cart-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4040fb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Formulário de Pedido */
+.order-form {
+    display: none;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.order-form h2 {
+    margin-bottom: 10px;
+}
+
+.order-form label {
+    display: block;
+    margin: 10px 0;
+}
+
+.order-form input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.btn-submit-order {
+    padding: 5px 10px;
+    background-color: #4040fb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.direitos{
+    text-align: center  ;
+}   
+
+#contato{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
